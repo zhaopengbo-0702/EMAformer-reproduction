@@ -1,0 +1,13 @@
+dataset,observed_mse,observed_mae,paper_mse,paper_mae,provenance
+ECL,0.15906,0.24746,0.158,0.247,transcribed_from_cloud_six_seed_aggregate_2026-11-25
+ETTh1,0.43109,0.42442,0.432,0.424,transcribed_from_cloud_six_seed_aggregate_2026-11-25
+ETTh2,0.37302,0.3949,0.373,0.395,transcribed_from_cloud_six_seed_aggregate_2026-11-25
+ETTm1,0.38131,0.38032,0.381,0.38,transcribed_from_cloud_six_seed_aggregate_2026-11-25
+ETTm2,0.27092,0.31279,0.271,0.313,transcribed_from_cloud_six_seed_aggregate_2026-11-25
+PEMS03,0.09202,0.1915,0.089,0.19,transcribed_from_cloud_six_seed_aggregate_2026-11-25
+PEMS04,0.0812,0.18066,0.081,0.18,transcribed_from_cloud_six_seed_aggregate_2026-11-25
+PEMS07,0.07425,0.16258,0.073,0.162,transcribed_from_cloud_six_seed_aggregate_2026-11-25
+PEMS08,0.13065,0.2101,0.128,0.208,transcribed_from_cloud_six_seed_aggregate_2026-11-25
+Solar,0.19662,0.22418,0.197,0.224,transcribed_from_cloud_six_seed_aggregate_2026-11-25
+Traffic,0.43279,0.25524,0.43,0.255,transcribed_from_cloud_six_seed_aggregate_2026-11-25
+Weather,0.24007,0.26175,0.24,0.262,transcribed_from_cloud_six_seed_aggregate_2026-11-25

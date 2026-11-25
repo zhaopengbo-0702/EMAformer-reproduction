@@ -1,0 +1,1256 @@
+{
+  "provenance": {
+    "kind": "published_reference_not_reproduction_results",
+    "source_url": "https://arxiv.org/pdf/2511.08396",
+    "version": "2511.08396v1, 11 Nov 2025",
+    "download_date_local": "2026-11-21",
+    "extended_pdf": "paper/EMAformer_arxiv_extended.pdf",
+    "extended_sha256": "8066963e80a2a97a2044a4c5636fe9a096ce47d784ce6d78e2ed690f24f50b9d",
+    "supplied_pdf_sha256": "a6f30788c18fab1fe83bafbefa063ee93d77d63c4fba9e40b7bb4a810fb9c56c",
+    "table_pages": {
+      "table1": 5,
+      "table2": 6,
+      "table3": 6,
+      "table4": 7,
+      "table5": 14,
+      "table6": 13
+    },
+    "table5_visual_check": "Table 5 was rendered and visually checked on page 14.",
+    "warning": "Rounded paper values only. Reported 0.000 SD is a rounded value, not proven zero variability."
+  },
+  "table1_horizon_averaged_results": {
+    "ETTh1": {
+      "EMAformer": {
+        "mse": 0.432,
+        "mae": 0.424
+      },
+      "TQNet": {
+        "mse": 0.441,
+        "mae": 0.434
+      },
+      "TimeXer": {
+        "mse": 0.437,
+        "mae": 0.437
+      },
+      "CycleNet": {
+        "mse": 0.457,
+        "mae": 0.441
+      },
+      "iTransformer": {
+        "mse": 0.454,
+        "mae": 0.448
+      },
+      "TimesNet": {
+        "mse": 0.458,
+        "mae": 0.45
+      },
+      "PatchTST": {
+        "mse": 0.469,
+        "mae": 0.455
+      },
+      "Crossformer": {
+        "mse": 0.529,
+        "mae": 0.522
+      },
+      "DLinear": {
+        "mse": 0.456,
+        "mae": 0.452
+      },
+      "SCINet": {
+        "mse": 0.747,
+        "mae": 0.647
+      }
+    },
+    "ETTh2": {
+      "EMAformer": {
+        "mse": 0.373,
+        "mae": 0.395
+      },
+      "TQNet": {
+        "mse": 0.378,
+        "mae": 0.402
+      },
+      "TimeXer": {
+        "mse": 0.368,
+        "mae": 0.396
+      },
+      "CycleNet": {
+        "mse": 0.388,
+        "mae": 0.409
+      },
+      "iTransformer": {
+        "mse": 0.383,
+        "mae": 0.407
+      },
+      "TimesNet": {
+        "mse": 0.414,
+        "mae": 0.427
+      },
+      "PatchTST": {
+        "mse": 0.387,
+        "mae": 0.407
+      },
+      "Crossformer": {
+        "mse": 0.942,
+        "mae": 0.684
+      },
+      "DLinear": {
+        "mse": 0.559,
+        "mae": 0.515
+      },
+      "SCINet": {
+        "mse": 0.954,
+        "mae": 0.723
+      }
+    },
+    "ETTm1": {
+      "EMAformer": {
+        "mse": 0.381,
+        "mae": 0.38
+      },
+      "TQNet": {
+        "mse": 0.377,
+        "mae": 0.393
+      },
+      "TimeXer": {
+        "mse": 0.382,
+        "mae": 0.397
+      },
+      "CycleNet": {
+        "mse": 0.379,
+        "mae": 0.396
+      },
+      "iTransformer": {
+        "mse": 0.407,
+        "mae": 0.41
+      },
+      "TimesNet": {
+        "mse": 0.4,
+        "mae": 0.406
+      },
+      "PatchTST": {
+        "mse": 0.387,
+        "mae": 0.4
+      },
+      "Crossformer": {
+        "mse": 0.513,
+        "mae": 0.495
+      },
+      "DLinear": {
+        "mse": 0.403,
+        "mae": 0.407
+      },
+      "SCINet": {
+        "mse": 0.486,
+        "mae": 0.481
+      }
+    },
+    "ETTm2": {
+      "EMAformer": {
+        "mse": 0.271,
+        "mae": 0.313
+      },
+      "TQNet": {
+        "mse": 0.277,
+        "mae": 0.323
+      },
+      "TimeXer": {
+        "mse": 0.274,
+        "mae": 0.322
+      },
+      "CycleNet": {
+        "mse": 0.266,
+        "mae": 0.314
+      },
+      "iTransformer": {
+        "mse": 0.288,
+        "mae": 0.332
+      },
+      "TimesNet": {
+        "mse": 0.291,
+        "mae": 0.333
+      },
+      "PatchTST": {
+        "mse": 0.281,
+        "mae": 0.326
+      },
+      "Crossformer": {
+        "mse": 0.757,
+        "mae": 0.611
+      },
+      "DLinear": {
+        "mse": 0.35,
+        "mae": 0.401
+      },
+      "SCINet": {
+        "mse": 0.571,
+        "mae": 0.537
+      }
+    },
+    "ECL": {
+      "EMAformer": {
+        "mse": 0.158,
+        "mae": 0.247
+      },
+      "TQNet": {
+        "mse": 0.164,
+        "mae": 0.259
+      },
+      "TimeXer": {
+        "mse": 0.171,
+        "mae": 0.27
+      },
+      "CycleNet": {
+        "mse": 0.168,
+        "mae": 0.259
+      },
+      "iTransformer": {
+        "mse": 0.178,
+        "mae": 0.27
+      },
+      "TimesNet": {
+        "mse": 0.193,
+        "mae": 0.295
+      },
+      "PatchTST": {
+        "mse": 0.205,
+        "mae": 0.29
+      },
+      "Crossformer": {
+        "mse": 0.244,
+        "mae": 0.334
+      },
+      "DLinear": {
+        "mse": 0.212,
+        "mae": 0.3
+      },
+      "SCINet": {
+        "mse": 0.571,
+        "mae": 0.537
+      }
+    },
+    "Solar": {
+      "EMAformer": {
+        "mse": 0.197,
+        "mae": 0.224
+      },
+      "TQNet": {
+        "mse": 0.198,
+        "mae": 0.256
+      },
+      "TimeXer": {
+        "mse": 0.237,
+        "mae": 0.302
+      },
+      "CycleNet": {
+        "mse": 0.21,
+        "mae": 0.261
+      },
+      "iTransformer": {
+        "mse": 0.233,
+        "mae": 0.262
+      },
+      "TimesNet": {
+        "mse": 0.301,
+        "mae": 0.319
+      },
+      "PatchTST": {
+        "mse": 0.27,
+        "mae": 0.307
+      },
+      "Crossformer": {
+        "mse": 0.641,
+        "mae": 0.639
+      },
+      "DLinear": {
+        "mse": 0.33,
+        "mae": 0.401
+      },
+      "SCINet": {
+        "mse": 0.282,
+        "mae": 0.375
+      }
+    },
+    "Traffic": {
+      "EMAformer": {
+        "mse": 0.43,
+        "mae": 0.255
+      },
+      "TQNet": {
+        "mse": 0.445,
+        "mae": 0.276
+      },
+      "TimeXer": {
+        "mse": 0.466,
+        "mae": 0.287
+      },
+      "CycleNet": {
+        "mse": 0.472,
+        "mae": 0.301
+      },
+      "iTransformer": {
+        "mse": 0.428,
+        "mae": 0.282
+      },
+      "TimesNet": {
+        "mse": 0.62,
+        "mae": 0.336
+      },
+      "PatchTST": {
+        "mse": 0.481,
+        "mae": 0.3
+      },
+      "Crossformer": {
+        "mse": 0.55,
+        "mae": 0.304
+      },
+      "DLinear": {
+        "mse": 0.625,
+        "mae": 0.383
+      },
+      "SCINet": {
+        "mse": 0.804,
+        "mae": 0.509
+      }
+    },
+    "Weather": {
+      "EMAformer": {
+        "mse": 0.24,
+        "mae": 0.262
+      },
+      "TQNet": {
+        "mse": 0.242,
+        "mae": 0.269
+      },
+      "TimeXer": {
+        "mse": 0.241,
+        "mae": 0.271
+      },
+      "CycleNet": {
+        "mse": 0.243,
+        "mae": 0.271
+      },
+      "iTransformer": {
+        "mse": 0.258,
+        "mae": 0.278
+      },
+      "TimesNet": {
+        "mse": 0.259,
+        "mae": 0.287
+      },
+      "PatchTST": {
+        "mse": 0.259,
+        "mae": 0.273
+      },
+      "Crossformer": {
+        "mse": 0.259,
+        "mae": 0.315
+      },
+      "DLinear": {
+        "mse": 0.265,
+        "mae": 0.317
+      },
+      "SCINet": {
+        "mse": 0.292,
+        "mae": 0.363
+      }
+    },
+    "PEMS03": {
+      "EMAformer": {
+        "mse": 0.089,
+        "mae": 0.19
+      },
+      "TQNet": {
+        "mse": 0.097,
+        "mae": 0.203
+      },
+      "TimeXer": {
+        "mse": 0.112,
+        "mae": 0.214
+      },
+      "CycleNet": {
+        "mse": 0.118,
+        "mae": 0.226
+      },
+      "iTransformer": {
+        "mse": 0.113,
+        "mae": 0.222
+      },
+      "TimesNet": {
+        "mse": 0.147,
+        "mae": 0.248
+      },
+      "PatchTST": {
+        "mse": 0.18,
+        "mae": 0.291
+      },
+      "Crossformer": {
+        "mse": 0.169,
+        "mae": 0.282
+      },
+      "DLinear": {
+        "mse": 0.278,
+        "mae": 0.375
+      },
+      "SCINet": {
+        "mse": 0.114,
+        "mae": 0.224
+      }
+    },
+    "PEMS04": {
+      "EMAformer": {
+        "mse": 0.081,
+        "mae": 0.18
+      },
+      "TQNet": {
+        "mse": 0.091,
+        "mae": 0.197
+      },
+      "TimeXer": {
+        "mse": 0.105,
+        "mae": 0.209
+      },
+      "CycleNet": {
+        "mse": 0.119,
+        "mae": 0.232
+      },
+      "iTransformer": {
+        "mse": 0.111,
+        "mae": 0.221
+      },
+      "TimesNet": {
+        "mse": 0.129,
+        "mae": 0.241
+      },
+      "PatchTST": {
+        "mse": 0.195,
+        "mae": 0.307
+      },
+      "Crossformer": {
+        "mse": 0.209,
+        "mae": 0.314
+      },
+      "DLinear": {
+        "mse": 0.295,
+        "mae": 0.388
+      },
+      "SCINet": {
+        "mse": 0.093,
+        "mae": 0.202
+      }
+    },
+    "PEMS07": {
+      "EMAformer": {
+        "mse": 0.073,
+        "mae": 0.162
+      },
+      "TQNet": {
+        "mse": 0.075,
+        "mae": 0.171
+      },
+      "TimeXer": {
+        "mse": 0.085,
+        "mae": 0.182
+      },
+      "CycleNet": {
+        "mse": 0.113,
+        "mae": 0.214
+      },
+      "iTransformer": {
+        "mse": 0.101,
+        "mae": 0.204
+      },
+      "TimesNet": {
+        "mse": 0.125,
+        "mae": 0.226
+      },
+      "PatchTST": {
+        "mse": 0.211,
+        "mae": 0.303
+      },
+      "Crossformer": {
+        "mse": 0.235,
+        "mae": 0.315
+      },
+      "DLinear": {
+        "mse": 0.329,
+        "mae": 0.396
+      },
+      "SCINet": {
+        "mse": 0.119,
+        "mae": 0.217
+      }
+    },
+    "PEMS08": {
+      "EMAformer": {
+        "mse": 0.128,
+        "mae": 0.208
+      },
+      "TQNet": {
+        "mse": 0.142,
+        "mae": 0.229
+      },
+      "TimeXer": {
+        "mse": 0.175,
+        "mae": 0.25
+      },
+      "CycleNet": {
+        "mse": 0.15,
+        "mae": 0.246
+      },
+      "iTransformer": {
+        "mse": 0.15,
+        "mae": 0.226
+      },
+      "TimesNet": {
+        "mse": 0.193,
+        "mae": 0.271
+      },
+      "PatchTST": {
+        "mse": 0.28,
+        "mae": 0.321
+      },
+      "Crossformer": {
+        "mse": 0.268,
+        "mae": 0.307
+      },
+      "DLinear": {
+        "mse": 0.379,
+        "mae": 0.416
+      },
+      "SCINet": {
+        "mse": 0.159,
+        "mae": 0.244
+      }
+    }
+  },
+  "table2_entropy": {
+    "ETTh1": {
+      "token_only": 2.36,
+      "token_channel": 1.902,
+      "full": 1.91
+    },
+    "ETTh2": {
+      "token_only": 2.358,
+      "token_channel": 1.867,
+      "full": 1.877
+    },
+    "ETTm1": {
+      "token_only": 2.367,
+      "token_channel": 1.897,
+      "full": 1.901
+    },
+    "ETTm2": {
+      "token_only": 2.29,
+      "token_channel": 1.716,
+      "full": 1.742
+    },
+    "ECL": {
+      "token_only": 5.69,
+      "token_channel": 5.494,
+      "full": 5.568
+    },
+    "Solar": {
+      "token_only": 4.763,
+      "token_channel": 4.664,
+      "full": 4.668
+    },
+    "Traffic": {
+      "token_only": 6.517,
+      "token_channel": 4.766,
+      "full": 5.567
+    },
+    "Weather": {
+      "token_only": 3.076,
+      "token_channel": 2.782,
+      "full": 2.852
+    }
+  },
+  "table3_transformer_variants_horizon_averaged": {
+    "ECL": {
+      "Reformer": {
+        "original": {
+          "mse": 0.338,
+          "mae": 0.422
+        },
+        "inverted": {
+          "mse": 0.208,
+          "mae": 0.301
+        },
+        "embedding": {
+          "mse": 0.186,
+          "mae": 0.269
+        }
+      },
+      "Informer": {
+        "original": {
+          "mse": 0.311,
+          "mae": 0.397
+        },
+        "inverted": {
+          "mse": 0.216,
+          "mae": 0.311
+        },
+        "embedding": {
+          "mse": 0.186,
+          "mae": 0.268
+        }
+      },
+      "Flowformer": {
+        "original": {
+          "mse": 0.267,
+          "mae": 0.359
+        },
+        "inverted": {
+          "mse": 0.21,
+          "mae": 0.293
+        },
+        "embedding": {
+          "mse": 0.187,
+          "mae": 0.269
+        }
+      }
+    },
+    "Traffic": {
+      "Reformer": {
+        "original": {
+          "mse": 0.741,
+          "mae": 0.422
+        },
+        "inverted": {
+          "mse": 0.647,
+          "mae": 0.37
+        },
+        "embedding": {
+          "mse": 0.494,
+          "mae": 0.311
+        }
+      },
+      "Informer": {
+        "original": {
+          "mse": 0.764,
+          "mae": 0.416
+        },
+        "inverted": {
+          "mse": 0.662,
+          "mae": 0.38
+        },
+        "embedding": {
+          "mse": 0.496,
+          "mae": 0.312
+        }
+      },
+      "Flowformer": {
+        "original": {
+          "mse": 0.75,
+          "mae": 0.421
+        },
+        "inverted": {
+          "mse": 0.524,
+          "mae": 0.355
+        },
+        "embedding": {
+          "mse": 0.49,
+          "mae": 0.31
+        }
+      }
+    },
+    "Weather": {
+      "Reformer": {
+        "original": {
+          "mse": 0.803,
+          "mae": 0.656
+        },
+        "inverted": {
+          "mse": 0.248,
+          "mae": 0.292
+        },
+        "embedding": {
+          "mse": 0.245,
+          "mae": 0.265
+        }
+      },
+      "Informer": {
+        "original": {
+          "mse": 0.634,
+          "mae": 0.548
+        },
+        "inverted": {
+          "mse": 0.271,
+          "mae": 0.33
+        },
+        "embedding": {
+          "mse": 0.241,
+          "mae": 0.263
+        }
+      },
+      "Flowformer": {
+        "original": {
+          "mse": 0.286,
+          "mae": 0.308
+        },
+        "inverted": {
+          "mse": 0.266,
+          "mae": 0.285
+        },
+        "embedding": {
+          "mse": 0.244,
+          "mae": 0.265
+        }
+      }
+    }
+  },
+  "table4_period_horizon_averaged": {
+    "ETTh1": {
+      "daily": {
+        "mse": 0.432,
+        "mae": 0.424
+      },
+      "weekly": {
+        "mse": 0.434,
+        "mae": 0.426
+      }
+    },
+    "ETTh2": {
+      "daily": {
+        "mse": 0.373,
+        "mae": 0.395
+      },
+      "weekly": {
+        "mse": 0.374,
+        "mae": 0.395
+      }
+    },
+    "ETTm1": {
+      "daily": {
+        "mse": 0.381,
+        "mae": 0.38
+      },
+      "weekly": {
+        "mse": 0.384,
+        "mae": 0.382
+      }
+    },
+    "ETTm2": {
+      "daily": {
+        "mse": 0.271,
+        "mae": 0.313
+      },
+      "weekly": {
+        "mse": 0.273,
+        "mae": 0.314
+      }
+    },
+    "ECL": {
+      "daily": {
+        "mse": 0.16,
+        "mae": 0.248
+      },
+      "weekly": {
+        "mse": 0.158,
+        "mae": 0.247
+      }
+    },
+    "Solar": {
+      "daily": {
+        "mse": 0.197,
+        "mae": 0.224
+      },
+      "weekly": {
+        "mse": 0.215,
+        "mae": 0.234
+      }
+    },
+    "Traffic": {
+      "daily": {
+        "mse": 0.44,
+        "mae": 0.26
+      },
+      "weekly": {
+        "mse": 0.43,
+        "mae": 0.255
+      }
+    },
+    "Weather": {
+      "daily": {
+        "mse": 0.24,
+        "mae": 0.262
+      },
+      "weekly": {
+        "mse": 0.243,
+        "mae": 0.265
+      }
+    }
+  },
+  "table5_six_seed_results": {
+    "ETTh1": {
+      "96": {
+        "mse": 0.374,
+        "mse_sd": 0.002,
+        "mae": 0.39,
+        "mae_sd": 0.001
+      },
+      "192": {
+        "mse": 0.428,
+        "mse_sd": 0.001,
+        "mae": 0.419,
+        "mae_sd": 0.001
+      },
+      "336": {
+        "mse": 0.469,
+        "mse_sd": 0.002,
+        "mae": 0.439,
+        "mae_sd": 0.001
+      },
+      "720": {
+        "mse": 0.456,
+        "mse_sd": 0.003,
+        "mae": 0.45,
+        "mae_sd": 0.002
+      },
+      "avg": {
+        "mse": 0.432,
+        "mse_sd": 0.002,
+        "mae": 0.424,
+        "mae_sd": 0.001
+      }
+    },
+    "ETTh2": {
+      "96": {
+        "mse": 0.29,
+        "mse_sd": 0.003,
+        "mae": 0.335,
+        "mae_sd": 0.002
+      },
+      "192": {
+        "mse": 0.367,
+        "mse_sd": 0.001,
+        "mae": 0.385,
+        "mae_sd": 0.0
+      },
+      "336": {
+        "mse": 0.414,
+        "mse_sd": 0.004,
+        "mae": 0.422,
+        "mae_sd": 0.002
+      },
+      "720": {
+        "mse": 0.424,
+        "mse_sd": 0.002,
+        "mae": 0.439,
+        "mae_sd": 0.001
+      },
+      "avg": {
+        "mse": 0.373,
+        "mse_sd": 0.003,
+        "mae": 0.395,
+        "mae_sd": 0.001
+      }
+    },
+    "ETTm1": {
+      "96": {
+        "mse": 0.304,
+        "mse_sd": 0.001,
+        "mae": 0.336,
+        "mae_sd": 0.0
+      },
+      "192": {
+        "mse": 0.359,
+        "mse_sd": 0.001,
+        "mae": 0.365,
+        "mae_sd": 0.0
+      },
+      "336": {
+        "mse": 0.393,
+        "mse_sd": 0.001,
+        "mae": 0.388,
+        "mae_sd": 0.0
+      },
+      "720": {
+        "mse": 0.467,
+        "mse_sd": 0.001,
+        "mae": 0.431,
+        "mae_sd": 0.0
+      },
+      "avg": {
+        "mse": 0.381,
+        "mse_sd": 0.001,
+        "mae": 0.38,
+        "mae_sd": 0.0
+      }
+    },
+    "ETTm2": {
+      "96": {
+        "mse": 0.167,
+        "mse_sd": 0.001,
+        "mae": 0.246,
+        "mae_sd": 0.0
+      },
+      "192": {
+        "mse": 0.233,
+        "mse_sd": 0.001,
+        "mae": 0.29,
+        "mae_sd": 0.0
+      },
+      "336": {
+        "mse": 0.293,
+        "mse_sd": 0.0,
+        "mae": 0.329,
+        "mae_sd": 0.0
+      },
+      "720": {
+        "mse": 0.39,
+        "mse_sd": 0.0,
+        "mae": 0.387,
+        "mae_sd": 0.0
+      },
+      "avg": {
+        "mse": 0.271,
+        "mse_sd": 0.0,
+        "mae": 0.313,
+        "mae_sd": 0.0
+      }
+    },
+    "ECL": {
+      "96": {
+        "mse": 0.13,
+        "mse_sd": 0.0,
+        "mae": 0.22,
+        "mae_sd": 0.0
+      },
+      "192": {
+        "mse": 0.15,
+        "mse_sd": 0.0,
+        "mae": 0.238,
+        "mae_sd": 0.0
+      },
+      "336": {
+        "mse": 0.166,
+        "mse_sd": 0.002,
+        "mae": 0.255,
+        "mae_sd": 0.002
+      },
+      "720": {
+        "mse": 0.187,
+        "mse_sd": 0.001,
+        "mae": 0.274,
+        "mae_sd": 0.001
+      },
+      "avg": {
+        "mse": 0.158,
+        "mse_sd": 0.001,
+        "mae": 0.247,
+        "mae_sd": 0.001
+      }
+    },
+    "Solar": {
+      "96": {
+        "mse": 0.169,
+        "mse_sd": 0.004,
+        "mae": 0.2,
+        "mae_sd": 0.003
+      },
+      "192": {
+        "mse": 0.189,
+        "mse_sd": 0.003,
+        "mae": 0.22,
+        "mae_sd": 0.002
+      },
+      "336": {
+        "mse": 0.224,
+        "mse_sd": 0.004,
+        "mae": 0.232,
+        "mae_sd": 0.001
+      },
+      "720": {
+        "mse": 0.208,
+        "mse_sd": 0.001,
+        "mae": 0.243,
+        "mae_sd": 0.001
+      },
+      "avg": {
+        "mse": 0.197,
+        "mse_sd": 0.003,
+        "mae": 0.224,
+        "mae_sd": 0.002
+      }
+    },
+    "Traffic": {
+      "96": {
+        "mse": 0.397,
+        "mse_sd": 0.001,
+        "mae": 0.238,
+        "mae_sd": 0.0
+      },
+      "192": {
+        "mse": 0.418,
+        "mse_sd": 0.001,
+        "mae": 0.249,
+        "mae_sd": 0.001
+      },
+      "336": {
+        "mse": 0.435,
+        "mse_sd": 0.001,
+        "mae": 0.256,
+        "mae_sd": 0.001
+      },
+      "720": {
+        "mse": 0.472,
+        "mse_sd": 0.001,
+        "mae": 0.276,
+        "mae_sd": 0.0
+      },
+      "avg": {
+        "mse": 0.43,
+        "mse_sd": 0.001,
+        "mae": 0.255,
+        "mae_sd": 0.001
+      }
+    },
+    "Weather": {
+      "96": {
+        "mse": 0.153,
+        "mse_sd": 0.001,
+        "mae": 0.19,
+        "mae_sd": 0.0
+      },
+      "192": {
+        "mse": 0.204,
+        "mse_sd": 0.001,
+        "mae": 0.239,
+        "mae_sd": 0.001
+      },
+      "336": {
+        "mse": 0.261,
+        "mse_sd": 0.001,
+        "mae": 0.282,
+        "mae_sd": 0.001
+      },
+      "720": {
+        "mse": 0.343,
+        "mse_sd": 0.0,
+        "mae": 0.336,
+        "mae_sd": 0.0
+      },
+      "avg": {
+        "mse": 0.24,
+        "mse_sd": 0.001,
+        "mae": 0.262,
+        "mae_sd": 0.001
+      }
+    },
+    "PEMS03": {
+      "12": {
+        "mse": 0.058,
+        "mse_sd": 0.0,
+        "mae": 0.157,
+        "mae_sd": 0.001
+      },
+      "24": {
+        "mse": 0.076,
+        "mse_sd": 0.001,
+        "mae": 0.176,
+        "mae_sd": 0.001
+      },
+      "48": {
+        "mse": 0.095,
+        "mse_sd": 0.004,
+        "mae": 0.198,
+        "mae_sd": 0.003
+      },
+      "96": {
+        "mse": 0.13,
+        "mse_sd": 0.001,
+        "mae": 0.229,
+        "mae_sd": 0.005
+      },
+      "avg": {
+        "mse": 0.089,
+        "mse_sd": 0.007,
+        "mae": 0.19,
+        "mae_sd": 0.003
+      }
+    },
+    "PEMS04": {
+      "12": {
+        "mse": 0.064,
+        "mse_sd": 0.001,
+        "mae": 0.161,
+        "mae_sd": 0.001
+      },
+      "24": {
+        "mse": 0.072,
+        "mse_sd": 0.001,
+        "mae": 0.17,
+        "mae_sd": 0.001
+      },
+      "48": {
+        "mse": 0.086,
+        "mse_sd": 0.001,
+        "mae": 0.186,
+        "mae_sd": 0.001
+      },
+      "96": {
+        "mse": 0.103,
+        "mse_sd": 0.001,
+        "mae": 0.205,
+        "mae_sd": 0.001
+      },
+      "avg": {
+        "mse": 0.081,
+        "mse_sd": 0.001,
+        "mae": 0.18,
+        "mae_sd": 0.001
+      }
+    },
+    "PEMS07": {
+      "12": {
+        "mse": 0.051,
+        "mse_sd": 0.001,
+        "mae": 0.139,
+        "mae_sd": 0.0
+      },
+      "24": {
+        "mse": 0.06,
+        "mse_sd": 0.001,
+        "mae": 0.149,
+        "mae_sd": 0.0
+      },
+      "48": {
+        "mse": 0.078,
+        "mse_sd": 0.005,
+        "mae": 0.165,
+        "mae_sd": 0.002
+      },
+      "96": {
+        "mse": 0.104,
+        "mse_sd": 0.003,
+        "mae": 0.194,
+        "mae_sd": 0.003
+      },
+      "avg": {
+        "mse": 0.073,
+        "mse_sd": 0.003,
+        "mae": 0.162,
+        "mae_sd": 0.001
+      }
+    },
+    "PEMS08": {
+      "12": {
+        "mse": 0.072,
+        "mse_sd": 0.0,
+        "mae": 0.17,
+        "mae_sd": 0.0
+      },
+      "24": {
+        "mse": 0.099,
+        "mse_sd": 0.0,
+        "mae": 0.199,
+        "mae_sd": 0.0
+      },
+      "48": {
+        "mse": 0.127,
+        "mse_sd": 0.001,
+        "mae": 0.212,
+        "mae_sd": 0.001
+      },
+      "96": {
+        "mse": 0.212,
+        "mse_sd": 0.007,
+        "mae": 0.254,
+        "mae_sd": 0.004
+      },
+      "avg": {
+        "mse": 0.128,
+        "mse_sd": 0.002,
+        "mae": 0.208,
+        "mae_sd": 0.001
+      }
+    }
+  },
+  "table6_dataset_statistics": {
+    "ETTh1": {
+      "channels": 7,
+      "paper_timesteps": 14400,
+      "frequency": "1h",
+      "selected_period": 24
+    },
+    "ETTh2": {
+      "channels": 7,
+      "paper_timesteps": 14400,
+      "frequency": "1h",
+      "selected_period": 24
+    },
+    "ETTm1": {
+      "channels": 7,
+      "paper_timesteps": 57600,
+      "frequency": "15min",
+      "selected_period": 96
+    },
+    "ETTm2": {
+      "channels": 7,
+      "paper_timesteps": 57600,
+      "frequency": "15min",
+      "selected_period": 96
+    },
+    "ECL": {
+      "channels": 321,
+      "paper_timesteps": 26304,
+      "frequency": "1h",
+      "selected_period": 168
+    },
+    "Solar": {
+      "channels": 137,
+      "paper_timesteps": 52560,
+      "frequency": "10min",
+      "selected_period": 144
+    },
+    "Traffic": {
+      "channels": 862,
+      "paper_timesteps": 17544,
+      "frequency": "1h",
+      "selected_period": 168
+    },
+    "Weather": {
+      "channels": 21,
+      "paper_timesteps": 52696,
+      "frequency": "10min",
+      "selected_period": 144
+    },
+    "PEMS03": {
+      "channels": 358,
+      "paper_timesteps": 26208,
+      "frequency": "5min",
+      "selected_period": 288
+    },
+    "PEMS04": {
+      "channels": 307,
+      "paper_timesteps": 16992,
+      "frequency": "5min",
+      "selected_period": 288
+    },
+    "PEMS07": {
+      "channels": 883,
+      "paper_timesteps": 28224,
+      "frequency": "5min",
+      "selected_period": 288
+    },
+    "PEMS08": {
+      "channels": 170,
+      "paper_timesteps": 17856,
+      "frequency": "5min",
+      "selected_period": 288
+    }
+  },
+  "table5_repeat_count": 6,
+  "paper_seed_ids": null,
+  "known_ambiguities": [
+    "Entropy log base not explicit; stated log(7) approx 2.81 implies base 2.",
+    "Main text equations use post-LN, appendix Algorithm 1 uses pre-LN; upstream implementation should be separately recorded.",
+    "MeanInput handling before/after normalization and retained normalization statistics are not fully specified.",
+    "Exact six seed values and standard deviation ddof are not disclosed.",
+    "Table 6 ETT lengths differ from common full raw file sizes; verify loader-used extent separately.",
+    "Non-main experiments do not explicitly state repeat count in their captions.",
+    "PEMS03 average MSE SD 0.007 is transcribed faithfully despite exceeding its four printed per-horizon SDs."
+  ]
+}

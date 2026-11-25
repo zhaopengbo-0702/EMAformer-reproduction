@@ -1,0 +1,1236 @@
+{
+  "kind": "downloaded_official_datasets_not_training_results",
+  "created_at_local": "2026-11-21T23:11:48.926840+08:00",
+  "source": {
+    "code_repository": "https://github.com/PlanckChang/EMAformer",
+    "code_commit": "b8f37c0c7d089e7263bbaeb681672a94f5afe233",
+    "readme_locator": "README.md lines 86-89",
+    "drive_url": "https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?usp=drive_link",
+    "public_download_url": "https://drive.usercontent.google.com/download?id=1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot&export=download&confirm=t",
+    "archive_name": "iTransformer_datasets.zip",
+    "archive_path": "datasets/iTransformer_datasets.zip",
+    "archive_bytes": 171600194,
+    "archive_sha256": "01d7016eaa3eb571b77542612219d116dfc6a9f5399586dea1f98261fc4d80c4",
+    "archive_crc_check": null,
+    "archive_members": [
+      {
+        "name": "iTransformer_datasets/",
+        "bytes": 0,
+        "compressed_bytes": 0,
+        "crc32": "00000000"
+      },
+      {
+        "name": "iTransformer_datasets/electricity/",
+        "bytes": 0,
+        "compressed_bytes": 0,
+        "crc32": "00000000"
+      },
+      {
+        "name": "iTransformer_datasets/electricity/.DS_Store",
+        "bytes": 6148,
+        "compressed_bytes": 183,
+        "crc32": "6d88006a"
+      },
+      {
+        "name": "iTransformer_datasets/electricity/electricity.csv",
+        "bytes": 95581762,
+        "compressed_bytes": 18304740,
+        "crc32": "eaecb8ea"
+      },
+      {
+        "name": "iTransformer_datasets/ETT-small/",
+        "bytes": 0,
+        "compressed_bytes": 0,
+        "crc32": "00000000"
+      },
+      {
+        "name": "iTransformer_datasets/ETT-small/ETTh1.csv",
+        "bytes": 2589657,
+        "compressed_bytes": 398995,
+        "crc32": "4b5772be"
+      },
+      {
+        "name": "iTransformer_datasets/ETT-small/ETTh2.csv",
+        "bytes": 2417960,
+        "compressed_bytes": 422214,
+        "crc32": "103d8643"
+      },
+      {
+        "name": "iTransformer_datasets/ETT-small/ETTm1.csv",
+        "bytes": 10360719,
+        "compressed_bytes": 1528839,
+        "crc32": "58ca54ae"
+      },
+      {
+        "name": "iTransformer_datasets/ETT-small/ETTm2.csv",
+        "bytes": 9677236,
+        "compressed_bytes": 1494820,
+        "crc32": "3d150304"
+      },
+      {
+        "name": "iTransformer_datasets/exchange_rate/",
+        "bytes": 0,
+        "compressed_bytes": 0,
+        "crc32": "00000000"
+      },
+      {
+        "name": "iTransformer_datasets/exchange_rate/.DS_Store",
+        "bytes": 6148,
+        "compressed_bytes": 183,
+        "crc32": "6d88006a"
+      },
+      {
+        "name": "iTransformer_datasets/exchange_rate/exchange_rate.csv",
+        "bytes": 637800,
+        "compressed_bytes": 190324,
+        "crc32": "c0ef5407"
+      },
+      {
+        "name": "iTransformer_datasets/PEMS/",
+        "bytes": 0,
+        "compressed_bytes": 0,
+        "crc32": "00000000"
+      },
+      {
+        "name": "iTransformer_datasets/PEMS/PEMS03.npz",
+        "bytes": 15800415,
+        "compressed_bytes": 15331870,
+        "crc32": "d75399cb"
+      },
+      {
+        "name": "iTransformer_datasets/PEMS/PEMS04.npz",
+        "bytes": 32956284,
+        "compressed_bytes": 32552491,
+        "crc32": "123cfbd7"
+      },
+      {
+        "name": "iTransformer_datasets/PEMS/PEMS07.npz",
+        "bytes": 43705518,
+        "compressed_bytes": 42590401,
+        "crc32": "6d0f9b10"
+      },
+      {
+        "name": "iTransformer_datasets/PEMS/PEMS08.npz",
+        "bytes": 18525419,
+        "compressed_bytes": 18246835,
+        "crc32": "42592a60"
+      },
+      {
+        "name": "iTransformer_datasets/Solar/",
+        "bytes": 0,
+        "compressed_bytes": 0,
+        "crc32": "00000000"
+      },
+      {
+        "name": "iTransformer_datasets/Solar/solar_AL.txt",
+        "bytes": 180018000,
+        "compressed_bytes": 8503085,
+        "crc32": "e8130571"
+      },
+      {
+        "name": "iTransformer_datasets/traffic/",
+        "bytes": 0,
+        "compressed_bytes": 0,
+        "crc32": "00000000"
+      },
+      {
+        "name": "iTransformer_datasets/traffic/.DS_Store",
+        "bytes": 6148,
+        "compressed_bytes": 183,
+        "crc32": "6d88006a"
+      },
+      {
+        "name": "iTransformer_datasets/traffic/traffic.csv",
+        "bytes": 136478119,
+        "compressed_bytes": 29760130,
+        "crc32": "b19514ee"
+      },
+      {
+        "name": "iTransformer_datasets/weather/",
+        "bytes": 0,
+        "compressed_bytes": 0,
+        "crc32": "00000000"
+      },
+      {
+        "name": "iTransformer_datasets/weather/weather.csv",
+        "bytes": 7235425,
+        "compressed_bytes": 2270387,
+        "crc32": "a15ce59b"
+      }
+    ],
+    "download_method": "PowerShell Invoke-WebRequest from official README public Drive link; standard large-file download confirmation, no authentication; CRC verified.",
+    "extraction": "Only 12 paper-required files extracted into EMAformer/dataset. Exchange and .DS_Store not extracted. Archive retained unchanged."
+  },
+  "dataset_root": "EMAformer/dataset",
+  "dataset_count": 12,
+  "datasets": [
+    {
+      "dataset": "ETTh1",
+      "path": "ETT-small/ETTh1.csv",
+      "relative_to_dataset_root": "ETT-small/ETTh1.csv",
+      "bytes": 2589657,
+      "sha256": "f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066",
+      "raw_shape": [
+        17420,
+        8
+      ],
+      "raw_nan_count": 0,
+      "date_column": "date",
+      "time": {
+        "first": "2016-07-01 00:00:00",
+        "last": "2018-06-26 19:00:00",
+        "parse_failures": 0,
+        "duplicate_timestamps": 0,
+        "delta_seconds_counts": {
+          "3600.0": 17419
+        }
+      },
+      "raw_inf_count": 0,
+      "forecast_shape": [
+        17420,
+        7
+      ],
+      "used_shape": [
+        14400,
+        7
+      ],
+      "unused_trailing_rows": 3020,
+      "used_nan_count": 0,
+      "used_inf_count": 0,
+      "zero_count_used": 1146,
+      "min_used": -21.961000442504886,
+      "max_used": 46.00699996948242,
+      "constant_training_channels": [],
+      "target_index_ranges_exclusive": {
+        "train": [
+          0,
+          8640
+        ],
+        "validation": [
+          8640,
+          11520
+        ],
+        "test": [
+          11520,
+          14400
+        ]
+      },
+      "scaler_fit_range_exclusive": [
+        0,
+        8640
+      ],
+      "window_counts_L96": {
+        "96": {
+          "train": 8449,
+          "validation": 2785,
+          "test": 2785
+        },
+        "192": {
+          "train": 8353,
+          "validation": 2689,
+          "test": 2689
+        },
+        "336": {
+          "train": 8209,
+          "validation": 2545,
+          "test": 2545
+        },
+        "720": {
+          "train": 7825,
+          "validation": 2161,
+          "test": 2161
+        }
+      },
+      "split_context": "validation/test loader prepends 96 past observations; prediction target stays within indicated range",
+      "paper_statistics": {
+        "channels": 7,
+        "paper_timesteps": 14400,
+        "frequency": "1h",
+        "selected_period": 24
+      },
+      "checks": {
+        "channels_match_paper": true,
+        "loader_used_rows_match_paper": true,
+        "finite_used": true
+      }
+    },
+    {
+      "dataset": "ETTh2",
+      "path": "ETT-small/ETTh2.csv",
+      "relative_to_dataset_root": "ETT-small/ETTh2.csv",
+      "bytes": 2417960,
+      "sha256": "a3dc2c597b9218c7ce1cd55eb77b283fd459a1d09d753063f944967dd6b9218b",
+      "raw_shape": [
+        17420,
+        8
+      ],
+      "raw_nan_count": 0,
+      "date_column": "date",
+      "time": {
+        "first": "2016-07-01 00:00:00",
+        "last": "2018-06-26 19:00:00",
+        "parse_failures": 0,
+        "duplicate_timestamps": 0,
+        "delta_seconds_counts": {
+          "3600.0": 17419
+        }
+      },
+      "raw_inf_count": 0,
+      "forecast_shape": [
+        17420,
+        7
+      ],
+      "used_shape": [
+        14400,
+        7
+      ],
+      "unused_trailing_rows": 3020,
+      "used_nan_count": 0,
+      "used_inf_count": 0,
+      "zero_count_used": 11484,
+      "min_used": -31.46199989318848,
+      "max_used": 107.89299774169922,
+      "constant_training_channels": [],
+      "target_index_ranges_exclusive": {
+        "train": [
+          0,
+          8640
+        ],
+        "validation": [
+          8640,
+          11520
+        ],
+        "test": [
+          11520,
+          14400
+        ]
+      },
+      "scaler_fit_range_exclusive": [
+        0,
+        8640
+      ],
+      "window_counts_L96": {
+        "96": {
+          "train": 8449,
+          "validation": 2785,
+          "test": 2785
+        },
+        "192": {
+          "train": 8353,
+          "validation": 2689,
+          "test": 2689
+        },
+        "336": {
+          "train": 8209,
+          "validation": 2545,
+          "test": 2545
+        },
+        "720": {
+          "train": 7825,
+          "validation": 2161,
+          "test": 2161
+        }
+      },
+      "split_context": "validation/test loader prepends 96 past observations; prediction target stays within indicated range",
+      "paper_statistics": {
+        "channels": 7,
+        "paper_timesteps": 14400,
+        "frequency": "1h",
+        "selected_period": 24
+      },
+      "checks": {
+        "channels_match_paper": true,
+        "loader_used_rows_match_paper": true,
+        "finite_used": true
+      }
+    },
+    {
+      "dataset": "ETTm1",
+      "path": "ETT-small/ETTm1.csv",
+      "relative_to_dataset_root": "ETT-small/ETTm1.csv",
+      "bytes": 10360719,
+      "sha256": "6ce1759b1a18e3328421d5d75fadcb316c449fcd7cec32820c8dafda71986c9e",
+      "raw_shape": [
+        69680,
+        8
+      ],
+      "raw_nan_count": 0,
+      "date_column": "date",
+      "time": {
+        "first": "2016-07-01 00:00:00",
+        "last": "2018-06-26 19:45:00",
+        "parse_failures": 0,
+        "duplicate_timestamps": 0,
+        "delta_seconds_counts": {
+          "900.0": 69679
+        }
+      },
+      "raw_inf_count": 0,
+      "forecast_shape": [
+        69680,
+        7
+      ],
+      "used_shape": [
+        57600,
+        7
+      ],
+      "unused_trailing_rows": 12080,
+      "used_nan_count": 0,
+      "used_inf_count": 0,
+      "zero_count_used": 4633,
+      "min_used": -23.98600006103516,
+      "max_used": 46.00699996948242,
+      "constant_training_channels": [],
+      "target_index_ranges_exclusive": {
+        "train": [
+          0,
+          34560
+        ],
+        "validation": [
+          34560,
+          46080
+        ],
+        "test": [
+          46080,
+          57600
+        ]
+      },
+      "scaler_fit_range_exclusive": [
+        0,
+        34560
+      ],
+      "window_counts_L96": {
+        "96": {
+          "train": 34369,
+          "validation": 11425,
+          "test": 11425
+        },
+        "192": {
+          "train": 34273,
+          "validation": 11329,
+          "test": 11329
+        },
+        "336": {
+          "train": 34129,
+          "validation": 11185,
+          "test": 11185
+        },
+        "720": {
+          "train": 33745,
+          "validation": 10801,
+          "test": 10801
+        }
+      },
+      "split_context": "validation/test loader prepends 96 past observations; prediction target stays within indicated range",
+      "paper_statistics": {
+        "channels": 7,
+        "paper_timesteps": 57600,
+        "frequency": "15min",
+        "selected_period": 96
+      },
+      "checks": {
+        "channels_match_paper": true,
+        "loader_used_rows_match_paper": true,
+        "finite_used": true
+      }
+    },
+    {
+      "dataset": "ETTm2",
+      "path": "ETT-small/ETTm2.csv",
+      "relative_to_dataset_root": "ETT-small/ETTm2.csv",
+      "bytes": 9677236,
+      "sha256": "db973ca252c6410a30d0469b13d696cf919648d0f3fd588c60f03fdbdbadd1fd",
+      "raw_shape": [
+        69680,
+        8
+      ],
+      "raw_nan_count": 0,
+      "date_column": "date",
+      "time": {
+        "first": "2016-07-01 00:00:00",
+        "last": "2018-06-26 19:45:00",
+        "parse_failures": 0,
+        "duplicate_timestamps": 0,
+        "delta_seconds_counts": {
+          "900.0": 69679
+        }
+      },
+      "raw_inf_count": 0,
+      "forecast_shape": [
+        69680,
+        7
+      ],
+      "used_shape": [
+        57600,
+        7
+      ],
+      "unused_trailing_rows": 12080,
+      "used_nan_count": 0,
+      "used_inf_count": 0,
+      "zero_count_used": 45599,
+      "min_used": -31.46199989318848,
+      "max_used": 107.89299774169922,
+      "constant_training_channels": [],
+      "target_index_ranges_exclusive": {
+        "train": [
+          0,
+          34560
+        ],
+        "validation": [
+          34560,
+          46080
+        ],
+        "test": [
+          46080,
+          57600
+        ]
+      },
+      "scaler_fit_range_exclusive": [
+        0,
+        34560
+      ],
+      "window_counts_L96": {
+        "96": {
+          "train": 34369,
+          "validation": 11425,
+          "test": 11425
+        },
+        "192": {
+          "train": 34273,
+          "validation": 11329,
+          "test": 11329
+        },
+        "336": {
+          "train": 34129,
+          "validation": 11185,
+          "test": 11185
+        },
+        "720": {
+          "train": 33745,
+          "validation": 10801,
+          "test": 10801
+        }
+      },
+      "split_context": "validation/test loader prepends 96 past observations; prediction target stays within indicated range",
+      "paper_statistics": {
+        "channels": 7,
+        "paper_timesteps": 57600,
+        "frequency": "15min",
+        "selected_period": 96
+      },
+      "checks": {
+        "channels_match_paper": true,
+        "loader_used_rows_match_paper": true,
+        "finite_used": true
+      }
+    },
+    {
+      "dataset": "ECL",
+      "path": "electricity/electricity.csv",
+      "relative_to_dataset_root": "electricity/electricity.csv",
+      "bytes": 95581762,
+      "sha256": "7e45845d54c5219bad0ae6bc1b5316cf8ff9cead5d33fa998a5a51c2e4a497ad",
+      "raw_shape": [
+        26304,
+        322
+      ],
+      "raw_nan_count": 0,
+      "date_column": "date",
+      "time": {
+        "first": "2016-07-01 02:00:00",
+        "last": "2019-07-02 01:00:00",
+        "parse_failures": 0,
+        "duplicate_timestamps": 0,
+        "delta_seconds_counts": {
+          "3600.0": 26303
+        }
+      },
+      "raw_inf_count": 0,
+      "forecast_shape": [
+        26304,
+        321
+      ],
+      "used_shape": [
+        26304,
+        321
+      ],
+      "unused_trailing_rows": 0,
+      "used_nan_count": 0,
+      "used_inf_count": 0,
+      "zero_count_used": 91817,
+      "min_used": 0.0,
+      "max_used": 764000.0,
+      "constant_training_channels": [],
+      "target_index_ranges_exclusive": {
+        "train": [
+          0,
+          18412
+        ],
+        "validation": [
+          18412,
+          21044
+        ],
+        "test": [
+          21044,
+          26304
+        ]
+      },
+      "scaler_fit_range_exclusive": [
+        0,
+        18412
+      ],
+      "window_counts_L96": {
+        "96": {
+          "train": 18221,
+          "validation": 2537,
+          "test": 5165
+        },
+        "192": {
+          "train": 18125,
+          "validation": 2441,
+          "test": 5069
+        },
+        "336": {
+          "train": 17981,
+          "validation": 2297,
+          "test": 4925
+        },
+        "720": {
+          "train": 17597,
+          "validation": 1913,
+          "test": 4541
+        }
+      },
+      "split_context": "validation/test loader prepends 96 past observations; prediction target stays within indicated range",
+      "paper_statistics": {
+        "channels": 321,
+        "paper_timesteps": 26304,
+        "frequency": "1h",
+        "selected_period": 168
+      },
+      "checks": {
+        "channels_match_paper": true,
+        "loader_used_rows_match_paper": true,
+        "finite_used": true
+      }
+    },
+    {
+      "dataset": "Solar",
+      "path": "Solar/solar_AL.txt",
+      "relative_to_dataset_root": "Solar/solar_AL.txt",
+      "bytes": 180018000,
+      "sha256": "230327ef72d2abb387939d4a35d6fd34f1066071bc7c40ce7ecf5531a0122ac2",
+      "raw_shape": [
+        52560,
+        137
+      ],
+      "raw_nan_count": 0,
+      "date_column": null,
+      "raw_inf_count": 0,
+      "forecast_shape": [
+        52560,
+        137
+      ],
+      "used_shape": [
+        52560,
+        137
+      ],
+      "unused_trailing_rows": 0,
+      "used_nan_count": 0,
+      "used_inf_count": 0,
+      "zero_count_used": 3967639,
+      "min_used": 0.0,
+      "max_used": 88.9,
+      "constant_training_channels": [],
+      "target_index_ranges_exclusive": {
+        "train": [
+          0,
+          36792
+        ],
+        "validation": [
+          36792,
+          42048
+        ],
+        "test": [
+          42048,
+          52560
+        ]
+      },
+      "scaler_fit_range_exclusive": [
+        0,
+        36792
+      ],
+      "window_counts_L96": {
+        "96": {
+          "train": 36601,
+          "validation": 5161,
+          "test": 10417
+        },
+        "192": {
+          "train": 36505,
+          "validation": 5065,
+          "test": 10321
+        },
+        "336": {
+          "train": 36361,
+          "validation": 4921,
+          "test": 10177
+        },
+        "720": {
+          "train": 35977,
+          "validation": 4537,
+          "test": 9793
+        }
+      },
+      "split_context": "validation/test loader prepends 96 past observations; prediction target stays within indicated range",
+      "paper_statistics": {
+        "channels": 137,
+        "paper_timesteps": 52560,
+        "frequency": "10min",
+        "selected_period": 144
+      },
+      "checks": {
+        "channels_match_paper": true,
+        "loader_used_rows_match_paper": true,
+        "finite_used": true
+      }
+    },
+    {
+      "dataset": "Traffic",
+      "path": "traffic/traffic.csv",
+      "relative_to_dataset_root": "traffic/traffic.csv",
+      "bytes": 136478119,
+      "sha256": "cb06463d56fa17d87f47027cd9389ceae82a69eddee51cdb61480e120dab0b16",
+      "raw_shape": [
+        17544,
+        863
+      ],
+      "raw_nan_count": 0,
+      "date_column": "date",
+      "time": {
+        "first": "2016-07-01 02:00:00",
+        "last": "2018-07-02 01:00:00",
+        "parse_failures": 0,
+        "duplicate_timestamps": 0,
+        "delta_seconds_counts": {
+          "3600.0": 17543
+        }
+      },
+      "raw_inf_count": 0,
+      "forecast_shape": [
+        17544,
+        862
+      ],
+      "used_shape": [
+        17544,
+        862
+      ],
+      "unused_trailing_rows": 0,
+      "used_nan_count": 0,
+      "used_inf_count": 0,
+      "zero_count_used": 135852,
+      "min_used": 0.0,
+      "max_used": 0.724,
+      "constant_training_channels": [],
+      "target_index_ranges_exclusive": {
+        "train": [
+          0,
+          12280
+        ],
+        "validation": [
+          12280,
+          14036
+        ],
+        "test": [
+          14036,
+          17544
+        ]
+      },
+      "scaler_fit_range_exclusive": [
+        0,
+        12280
+      ],
+      "window_counts_L96": {
+        "96": {
+          "train": 12089,
+          "validation": 1661,
+          "test": 3413
+        },
+        "192": {
+          "train": 11993,
+          "validation": 1565,
+          "test": 3317
+        },
+        "336": {
+          "train": 11849,
+          "validation": 1421,
+          "test": 3173
+        },
+        "720": {
+          "train": 11465,
+          "validation": 1037,
+          "test": 2789
+        }
+      },
+      "split_context": "validation/test loader prepends 96 past observations; prediction target stays within indicated range",
+      "paper_statistics": {
+        "channels": 862,
+        "paper_timesteps": 17544,
+        "frequency": "1h",
+        "selected_period": 168
+      },
+      "checks": {
+        "channels_match_paper": true,
+        "loader_used_rows_match_paper": true,
+        "finite_used": true
+      }
+    },
+    {
+      "dataset": "Weather",
+      "path": "weather/weather.csv",
+      "relative_to_dataset_root": "weather/weather.csv",
+      "bytes": 7235425,
+      "sha256": "34ee981d07313e51da2a50bb600072c8ae4a69cb4b0651f4cb93a069d7a2ba63",
+      "raw_shape": [
+        52696,
+        22
+      ],
+      "raw_nan_count": 0,
+      "date_column": "date",
+      "time": {
+        "first": "2020-01-01 00:10:00",
+        "last": "2021-01-01 00:00:00",
+        "parse_failures": 0,
+        "duplicate_timestamps": 1,
+        "delta_seconds_counts": {
+          "600.0": 52693,
+          "0.0": 1,
+          "6000.0": 1
+        }
+      },
+      "raw_inf_count": 0,
+      "forecast_shape": [
+        52696,
+        21
+      ],
+      "used_shape": [
+        52696,
+        21
+      ],
+      "unused_trailing_rows": 0,
+      "used_nan_count": 0,
+      "used_inf_count": 0,
+      "zero_count_used": 176746,
+      "min_used": -9999.0,
+      "max_used": 2498.94,
+      "constant_training_channels": [],
+      "target_index_ranges_exclusive": {
+        "train": [
+          0,
+          36887
+        ],
+        "validation": [
+          36887,
+          42157
+        ],
+        "test": [
+          42157,
+          52696
+        ]
+      },
+      "scaler_fit_range_exclusive": [
+        0,
+        36887
+      ],
+      "window_counts_L96": {
+        "96": {
+          "train": 36696,
+          "validation": 5175,
+          "test": 10444
+        },
+        "192": {
+          "train": 36600,
+          "validation": 5079,
+          "test": 10348
+        },
+        "336": {
+          "train": 36456,
+          "validation": 4935,
+          "test": 10204
+        },
+        "720": {
+          "train": 36072,
+          "validation": 4551,
+          "test": 9820
+        }
+      },
+      "split_context": "validation/test loader prepends 96 past observations; prediction target stays within indicated range",
+      "paper_statistics": {
+        "channels": 21,
+        "paper_timesteps": 52696,
+        "frequency": "10min",
+        "selected_period": 144
+      },
+      "checks": {
+        "channels_match_paper": true,
+        "loader_used_rows_match_paper": true,
+        "finite_used": true
+      }
+    },
+    {
+      "dataset": "PEMS03",
+      "path": "PEMS/PEMS03.npz",
+      "relative_to_dataset_root": "PEMS/PEMS03.npz",
+      "bytes": 15800415,
+      "sha256": "34859517425eded66a0014db63de54b95d0428c38890741a1710ed4d3b043de8",
+      "npz_keys": [
+        "data"
+      ],
+      "raw_shape": [
+        26208,
+        358,
+        1
+      ],
+      "raw_dtype": "float64",
+      "raw_nan_count": 0,
+      "raw_inf_count": 0,
+      "selection": "data[:, :, 0] per official Dataset_PEMS",
+      "date_column": null,
+      "forecast_shape": [
+        26208,
+        358
+      ],
+      "used_shape": [
+        26208,
+        358
+      ],
+      "unused_trailing_rows": 0,
+      "used_nan_count": 0,
+      "used_inf_count": 0,
+      "zero_count_used": 63028,
+      "min_used": 0.0,
+      "max_used": 1852.0,
+      "constant_training_channels": [],
+      "target_index_ranges_exclusive": {
+        "train": [
+          0,
+          15724
+        ],
+        "validation": [
+          15724,
+          20965
+        ],
+        "test": [
+          20965,
+          26208
+        ]
+      },
+      "scaler_fit_range_exclusive": [
+        0,
+        15724
+      ],
+      "window_counts_L96": {
+        "12": {
+          "train": 15617,
+          "validation": 5230,
+          "test": 5232
+        },
+        "24": {
+          "train": 15605,
+          "validation": 5218,
+          "test": 5220
+        },
+        "48": {
+          "train": 15581,
+          "validation": 5194,
+          "test": 5196
+        },
+        "96": {
+          "train": 15533,
+          "validation": 5146,
+          "test": 5148
+        }
+      },
+      "split_context": "validation/test loader prepends 96 past observations; prediction target stays within indicated range",
+      "paper_statistics": {
+        "channels": 358,
+        "paper_timesteps": 26208,
+        "frequency": "5min",
+        "selected_period": 288
+      },
+      "checks": {
+        "channels_match_paper": true,
+        "loader_used_rows_match_paper": true,
+        "finite_used": true
+      }
+    },
+    {
+      "dataset": "PEMS04",
+      "path": "PEMS/PEMS04.npz",
+      "relative_to_dataset_root": "PEMS/PEMS04.npz",
+      "bytes": 32956284,
+      "sha256": "95a3c9b720fffdb85f0330d09bfab41b0b3cad0ca86c0d7d5f3accacb4ac999a",
+      "npz_keys": [
+        "data"
+      ],
+      "raw_shape": [
+        16992,
+        307,
+        3
+      ],
+      "raw_dtype": "float64",
+      "raw_nan_count": 0,
+      "raw_inf_count": 0,
+      "selection": "data[:, :, 0] per official Dataset_PEMS",
+      "date_column": null,
+      "forecast_shape": [
+        16992,
+        307
+      ],
+      "used_shape": [
+        16992,
+        307
+      ],
+      "unused_trailing_rows": 0,
+      "used_nan_count": 0,
+      "used_inf_count": 0,
+      "zero_count_used": 82935,
+      "min_used": 0.0,
+      "max_used": 919.0,
+      "constant_training_channels": [],
+      "target_index_ranges_exclusive": {
+        "train": [
+          0,
+          10195
+        ],
+        "validation": [
+          10195,
+          13593
+        ],
+        "test": [
+          13593,
+          16992
+        ]
+      },
+      "scaler_fit_range_exclusive": [
+        0,
+        10195
+      ],
+      "window_counts_L96": {
+        "12": {
+          "train": 10088,
+          "validation": 3387,
+          "test": 3388
+        },
+        "24": {
+          "train": 10076,
+          "validation": 3375,
+          "test": 3376
+        },
+        "48": {
+          "train": 10052,
+          "validation": 3351,
+          "test": 3352
+        },
+        "96": {
+          "train": 10004,
+          "validation": 3303,
+          "test": 3304
+        }
+      },
+      "split_context": "validation/test loader prepends 96 past observations; prediction target stays within indicated range",
+      "paper_statistics": {
+        "channels": 307,
+        "paper_timesteps": 16992,
+        "frequency": "5min",
+        "selected_period": 288
+      },
+      "checks": {
+        "channels_match_paper": true,
+        "loader_used_rows_match_paper": true,
+        "finite_used": true
+      }
+    },
+    {
+      "dataset": "PEMS07",
+      "path": "PEMS/PEMS07.npz",
+      "relative_to_dataset_root": "PEMS/PEMS07.npz",
+      "bytes": 43705518,
+      "sha256": "a07887e610aa986276209bc9384d14ed7858fdcad1ded67f53dca19eb828600b",
+      "npz_keys": [
+        "data"
+      ],
+      "raw_shape": [
+        28224,
+        883,
+        1
+      ],
+      "raw_dtype": "float64",
+      "raw_nan_count": 0,
+      "raw_inf_count": 0,
+      "selection": "data[:, :, 0] per official Dataset_PEMS",
+      "date_column": null,
+      "forecast_shape": [
+        28224,
+        883
+      ],
+      "used_shape": [
+        28224,
+        883
+      ],
+      "unused_trailing_rows": 0,
+      "used_nan_count": 0,
+      "used_inf_count": 0,
+      "zero_count_used": 112647,
+      "min_used": 0.0,
+      "max_used": 1498.0,
+      "constant_training_channels": [],
+      "target_index_ranges_exclusive": {
+        "train": [
+          0,
+          16934
+        ],
+        "validation": [
+          16934,
+          22578
+        ],
+        "test": [
+          22578,
+          28224
+        ]
+      },
+      "scaler_fit_range_exclusive": [
+        0,
+        16934
+      ],
+      "window_counts_L96": {
+        "12": {
+          "train": 16827,
+          "validation": 5633,
+          "test": 5635
+        },
+        "24": {
+          "train": 16815,
+          "validation": 5621,
+          "test": 5623
+        },
+        "48": {
+          "train": 16791,
+          "validation": 5597,
+          "test": 5599
+        },
+        "96": {
+          "train": 16743,
+          "validation": 5549,
+          "test": 5551
+        }
+      },
+      "split_context": "validation/test loader prepends 96 past observations; prediction target stays within indicated range",
+      "paper_statistics": {
+        "channels": 883,
+        "paper_timesteps": 28224,
+        "frequency": "5min",
+        "selected_period": 288
+      },
+      "checks": {
+        "channels_match_paper": true,
+        "loader_used_rows_match_paper": true,
+        "finite_used": true
+      }
+    },
+    {
+      "dataset": "PEMS08",
+      "path": "PEMS/PEMS08.npz",
+      "relative_to_dataset_root": "PEMS/PEMS08.npz",
+      "bytes": 18525419,
+      "sha256": "e1d03ce74e9fb79149e6e7c37c680214822c4a285baa2f42278cacabcd25c075",
+      "npz_keys": [
+        "data"
+      ],
+      "raw_shape": [
+        17856,
+        170,
+        3
+      ],
+      "raw_dtype": "float64",
+      "raw_nan_count": 0,
+      "raw_inf_count": 0,
+      "selection": "data[:, :, 0] per official Dataset_PEMS",
+      "date_column": null,
+      "forecast_shape": [
+        17856,
+        170
+      ],
+      "used_shape": [
+        17856,
+        170
+      ],
+      "unused_trailing_rows": 0,
+      "used_nan_count": 0,
+      "used_inf_count": 0,
+      "zero_count_used": 10560,
+      "min_used": 0.0,
+      "max_used": 1147.0,
+      "constant_training_channels": [],
+      "target_index_ranges_exclusive": {
+        "train": [
+          0,
+          10713
+        ],
+        "validation": [
+          10713,
+          14284
+        ],
+        "test": [
+          14284,
+          17856
+        ]
+      },
+      "scaler_fit_range_exclusive": [
+        0,
+        10713
+      ],
+      "window_counts_L96": {
+        "12": {
+          "train": 10606,
+          "validation": 3560,
+          "test": 3561
+        },
+        "24": {
+          "train": 10594,
+          "validation": 3548,
+          "test": 3549
+        },
+        "48": {
+          "train": 10570,
+          "validation": 3524,
+          "test": 3525
+        },
+        "96": {
+          "train": 10522,
+          "validation": 3476,
+          "test": 3477
+        }
+      },
+      "split_context": "validation/test loader prepends 96 past observations; prediction target stays within indicated range",
+      "paper_statistics": {
+        "channels": 170,
+        "paper_timesteps": 17856,
+        "frequency": "5min",
+        "selected_period": 288
+      },
+      "checks": {
+        "channels_match_paper": true,
+        "loader_used_rows_match_paper": true,
+        "finite_used": true
+      }
+    }
+  ],
+  "notes": [
+    "No resampling, missing-value fill, normalization, or content transformation was applied during acquisition.",
+    "Table6 ETT length describes loader-used extent, not full raw file length.",
+    "Window counts are mathematical loader counts before DataLoader drop_last; training/validation drop_last changes batches.",
+    "Source hashes establish downloaded file identity; no independent author-published checksums were available for comparison.",
+    "Public archive officialness is supported by EMAformer README link, not only its iTransformer filename."
+  ]
+}

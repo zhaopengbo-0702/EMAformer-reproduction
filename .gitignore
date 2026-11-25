@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+.venv/
+results/
+EMAformer/dataset/
+*.pth
+*.whl
+*.tar
+*.tar.gz
+*.zip
