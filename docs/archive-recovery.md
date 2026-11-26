@@ -18,6 +18,17 @@ fd048a8b7e4559ab847210e36e9af55250824aa99cd1fb3869f7f3cff84c7d0b
 
 附件中清单可能命名为 `export_manifest_<hash前缀>.json`；只有文件内容哈希与上述值相同，才是本次主导出清单。`backup_index_<hash前缀>.json` 描述片段与远端资产映射，`release_parts_index.json` 或范围索引描述卷内顺序、偏移、字节数和 SHA-256。`complete_uploaded_volumes` 仅表示该份索引确认的卷，不能从文件名或上传时间推定所有卷完整。
 
+## 从 GitHub 验证分卷
+
+从 [Releases](https://github.com/zhaopengbo-0702/EMAformer-reproduction/releases) 查看归档。登录有权限的 GitHub 账号后，使用 Release 459344454 中指向本仓库的备份索引。历史索引 backup_index_8cb5a628ae19a770.json 记录迁移前的仓库。
+
+从仓库根目录运行以下命令，将索引文件名换成当前 Release 附件列表中的文件名。每卷需通过全部分片及整卷校验。校验模式仅回读字节。恢复时将 --verify-only 换成 --destination restored-archives。
+
+    python -m pip install requests
+    python tools/archive/restore_release_archive.py --index-asset backup_index_7927a2e913664ac2.json --volume main288_001.tar --verify-only
+
+仓库主分支的源码、配置、统计表与复现报告可公开浏览。归档暂存在草稿，截图、部署记录和第三方原文件随归档供仓库所有者恢复。
+
 ## 恢复与校验
 
 1. 从有权限访问的附件中取得原始导出清单、与本次恢复对应的备份索引及所有片段。先核对清单整体 SHA-256，再核对备份索引中绑定的 `manifest_sha256`；对索引自身使用随附回执或独立可信记录中的 SHA-256。缺片、清单不符或状态不完整时停止，不补零或跳过。
