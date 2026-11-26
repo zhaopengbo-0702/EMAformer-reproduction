@@ -19,8 +19,8 @@ python main_closeout/build_report.py \
 ```bash
 python main_closeout/build_report.py \
   --manifest reproduction/manifest_paper_owned.json \
-  --output D:/em1/results \
-  --local-results D:/em1/results D:/em2/results \
+  --output /path/to/download1/results \
+  --local-results /path/to/download1/results /path/to/download2/results \
   --reference outputs/paper_reference_results.json \
   --destination outputs/main_closeout_local_final
 ```
