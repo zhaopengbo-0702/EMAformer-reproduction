@@ -1,0 +1,63 @@
+{
+  "scope": "EMAformer main forecast matrix",
+  "completed_at_beijing": "2026-11-26T22:46:53.689018+08:00",
+  "local_transfer_verified_at_beijing": "2026-11-26 22:09:56（北京时间）",
+  "verified_export_volumes": 25,
+  "verified_archive_members": 5727,
+  "verified_tar_bytes": 94589265920,
+  "export_manifest_sha256": "fd048a8b7e4559ab847210e36e9af55250824aa99cd1fb3869f7f3cff84c7d0b",
+  "local_acceptance_sha256": "bc6ccb836e515580187de9f9c79c339b1884f2eb94b7583949a42f077f6e0e8a",
+  "verified_main_training_runs": 288,
+  "verified_checkpoint_roles": 576,
+  "main_closeout_complete": true,
+  "timing": {
+    "successful_training_attempts": 288,
+    "selected_training_attempt_wall_clock_seconds": 254552.56702599992,
+    "selected_training_attempt_first_start_utc": "2026-11-21T16:36:28.461228+00:00",
+    "selected_training_attempt_last_end_utc": "2026-11-24T15:48:13.900975+00:00",
+    "main_supervisor_wall_clock_seconds": 255961.911029,
+    "main_supervisors": [
+      {
+        "started_utc": "2026-11-21T16:39:09.061777+00:00",
+        "finished_utc": "2026-11-23T14:03:05.296117+00:00",
+        "state": "failed",
+        "elapsed_seconds": 163436.23434
+      },
+      {
+        "started_utc": "2026-11-23T14:13:12.359784+00:00",
+        "finished_utc": "2026-11-24T15:55:18.036473+00:00",
+        "state": "complete",
+        "elapsed_seconds": 92525.676689
+      }
+    ]
+  },
+  "tables": {
+    "Table1_EMAformer_horizon_average.csv": {
+      "rows": 24,
+      "sha256": "96c5d190dcf659307c9a3eb12529a3c452fc08eb52eacadc68951803660ba59f",
+      "matching_means": true,
+      "sd_cells_with_rounding_difference": 10,
+      "maximum_absolute_difference": 4.336808689942018e-19
+    },
+    "Table5_EMAformer_per_horizon.csv": {
+      "rows": 96,
+      "sha256": "43e4caac756c986212221f7642dd40261ef50c479b4d398ceb3e27f475c82798",
+      "matching_means": true,
+      "sd_cells_with_rounding_difference": 50,
+      "maximum_absolute_difference": 3.469446951953614e-18
+    },
+    "release_vs_best.csv": {
+      "rows": 48,
+      "sha256": "c240773a14e30fa11d82b80ef78c2fc8b955b16fa3ab77acd565992d67136f22",
+      "matching_means": true,
+      "sd_cells_with_rounding_difference": 0,
+      "maximum_absolute_difference": 0
+    },
+    "main288_per_seed_metrics.csv": {
+      "rows": 576,
+      "sha256": "b14d6524e675cd9d0a8fee6d8acb70f6188a965decb2ecb649b0bec29ceafed2",
+      "metrics_and_provenance_match_strict_aggregate": true
+    }
+  },
+  "full_paper_reproduction_claim": false
+}

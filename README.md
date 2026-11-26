@@ -1,8 +1,8 @@
 # EMAformer reproduction
 
-Main forecast matrix: 12 datasets, 4 forecast horizons and 6 seeds, 288 EMAformer runs. See the [Chinese reproduction report](%E5%A4%8D%E7%8E%B0%E6%8A%A5%E5%91%8A.md) for commands, the numerical comparison and evidence limits. The final cloud aggregation has been downloaded, and its six-seed means and population/sample standard deviations have been independently recomputed locally. All 25 export volumes and their 5,727 files passed local SHA-256 verification on 2026-11-26. The separate strict check of 288 training runs is in progress.
+The main forecast matrix covers 12 datasets, 4 forecast horizons, and 6 seeds. All 288 EMAformer runs passed strict local acceptance, including both checkpoint roles. All 25 export volumes and their 5,727 files passed SHA-256 verification. Reaggregation reproduced the 576 per-seed measurements and all table means. The largest absolute rounding difference in standard deviations and derived fields was 3.47e-18. [Chinese reproduction report](%E5%A4%8D%E7%8E%B0%E6%8A%A5%E5%91%8A.md) · [Local acceptance receipt](results-summary/local-main288-acceptance.json)
 
-The original archive is synchronized through a draft Release. See the [archive recovery guide](docs/archive-recovery.md) for Release access, manifests, SHA-256 checks and restoration.
+The original archive is synchronized through a draft Release. The archive recovery guide describes access, verified indexes, and SHA-256 checks. [Archive recovery guide](docs/archive-recovery.md)
 
 - Final six-seed tables from the downloaded aggregate include [Table 1](results-summary/Table1_EMAformer_horizon_average.csv), [Table 5](results-summary/Table5_EMAformer_per_horizon.csv), and the [release/best checkpoint comparison](results-summary/release_vs_best.csv).
 - The [per-seed measurements](results-summary/main288_per_seed_metrics.csv) cover all 288 main runs and both checkpoint roles, with 576 rows of MSE, MAE, and RMSE. They come from the verified final aggregate. Download the training datasets from the original sources recorded in the dataset manifest.
