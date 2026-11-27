@@ -7,7 +7,7 @@
 | Weather 气象输入文件 | [下载气象数据](https://github.com/zhaopengbo-0702/EMAformer-reproduction/releases/tag/emaformer-weather-data-20261127) |
 | ECL 用电量输入文件 | [下载用电量数据](https://github.com/zhaopengbo-0702/EMAformer-reproduction/releases/tag/emaformer-ecl-data-20261127) |
 | 576 份预测样本 | 每份包含前 16 个测试窗口的预测值，压缩包约 1.48 GB。[下载预测样本](https://github.com/zhaopengbo-0702/EMAformer-reproduction/releases/tag/emaformer-main288-predictions-20261127) |
-| 576 份模型权重 | 每次训练对应两份权重，共 52 个可单独解压的压缩包，约 87.39 GB。[模型权重发布页](https://github.com/zhaopengbo-0702/EMAformer-reproduction/releases/tag/emaformer-main288-weights-20261127)（上传和校验完成后开放） |
+| 576 份模型权重 | 每次训练对应两份权重，共 52 个可单独解压的压缩包，约 87.39 GB。[模型权重发布页](https://github.com/zhaopengbo-0702/EMAformer-reproduction/releases/tag/emaformer-main288-weights-20261127)（上传和校验完成后开放） · [按数据集和随机种子查找权重](../results-summary/main288_weight_download_index.csv) |
 
 每个下载页面提供附件字节数和 SHA-256 校验值。预测样本和模型权重的压缩包内附索引，记录数据集、预测长度、随机种子和权重类型。训练中保存的预测样本来自前 16 个测试窗口，测试真值可用下方列出的原始输入数据按相同划分重建。
 
