@@ -1,10 +1,8 @@
-# Third-party notices
+# 第三方许可说明
 
-The vendored EMAformer code retains its upstream MIT license in
-[EMAformer/LICENSE](EMAformer/LICENSE), also reproduced in
-[UPSTREAM-LICENSE](UPSTREAM-LICENSE).
+本仓库收录的 EMAformer 源码保留原作者的 MIT 许可。[EMAformer 目录中的许可原文](EMAformer/LICENSE) · [仓库中的许可副本](UPSTREAM-LICENSE)
 
-`EMAformer/utils/timefeatures.py` carries the following separate notice:
+`EMAformer/utils/timefeatures.py` 的源码开头另有以下声明。
 
 > From: gluonts/src/gluonts/time_feature/_base.py
 >
@@ -12,8 +10,4 @@ The vendored EMAformer code retains its upstream MIT license in
 >
 > Licensed under the Apache License, Version 2.0.
 
-The original source header remains unchanged. The full Apache License 2.0
-text is included in [LICENSES/Apache-2.0.txt](LICENSES/Apache-2.0.txt), copied
-from the [Apache Software Foundation's official license text](https://www.apache.org/licenses/LICENSE-2.0.txt).
-This component retains its Apache 2.0 terms; the upstream MIT notice does not
-replace them.
+该组件适用 Apache 2.0 许可。仓库收录的许可全文来自 Apache 软件基金会。[仓库中的 Apache 2.0 许可](LICENSES/Apache-2.0.txt) · [官方许可原文](https://www.apache.org/licenses/LICENSE-2.0.txt)

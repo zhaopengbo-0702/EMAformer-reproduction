@@ -1,10 +1,10 @@
 <h1 align="center">
-  <img src="figures/Transformer_with_amour.png" alt="EMAformer Logo" height="266" style="vertical-align:middle;margin-bottom:8px;"><br>
+  <img src="figures/Transformer_with_amour.png" alt="EMAformer 标志" height="266" style="vertical-align:middle;margin-bottom:8px;"><br>
   EMAformer
 </h1>
 
 <p align="center">
-  <em>Equip your Transformer with embedding armor and beat the MLPs in time series forecasting.</em>
+  <em>通过引入额外的嵌入，提升 Transformer 在时间序列预测中的表现。</em>
 </p>
 
 <p align="center">
@@ -15,55 +15,54 @@
   </a>
 </p>
 
-This is the official implementation of the paper, [EMAformer: Enhancing Transformer through Embedding Armor for Time Series Forecasting](https://arxiv.org/abs/2511.08396), accepted by AAAI 2026.
+本页根据论文作者的官方实现文档翻译。作者的实验结果和推荐环境见下文，本仓库实际使用的环境、复现步骤和结果可在复现报告中查看。[上游原文](https://github.com/PlanckChang/EMAformer) · [本仓库的复现报告](../复现报告.md)
 
-If you are wondering why explicitly modeling inter-channel dependencies might lead to a decline in predictive performance and want to use Transformers for time series analysis, this repository is well-suited to you.
+这项工作研究了为什么显式建模不同变量之间的关系有时会降低预测精度，以及如何改进用于时间序列预测的 Transformer。[论文原文](https://arxiv.org/abs/2511.08396)
 
-## Updates
+## 更新记录
 
-- 🌟 (2025.11) EMAformer was accepted by AAAI 2026.
+- 2025 年 11 月，EMAformer 论文被 AAAI 2026 接收。
 
-## Introduction
+## 方法与论文结果
 
-EMAformer enhances the Transformer architecture by simply introducing additional embeddings. It achieves state-of-the-art performance on 12 real-world benchmarks, reducing forecasting errors by an average of 2.73% in MSE and 5.15% in MAE.
-
-<p align="center">
-  <img src="./figures/CoV_matrix_plot_etth2.png" alt="Left" width="30%">
-  <img src="./figures/CoV_matrix_plot_ettm2.png" alt="Right" width="30%">
-</p>
-
-We analyzed inter-channel correlations using the coefficient of variation (CoV), which measures relative fluctuation around the mean of inter-channel
-correlations. For example, on ETTh2 and ETTm2, these correlations swing wildly over time, yielding the extremely high CoV values. Such volatility implies that local inter-channel relationships are inherently unstable. Such fluctuations can mislead self-attention mechanisms, resulting in suboptimal performance.
+EMAformer 在 Transformer 中引入额外的嵌入。作者在 12 个真实数据集的基准评测中报告了领先的表现，均方误差（MSE）和平均绝对误差（MAE）平均分别下降了 2.73% 和 5.15%。
 
 <p align="center">
-<img src="./figures/overview.png"  alt="" align=center />
+  <img src="./figures/CoV_matrix_plot_etth2.png" alt="ETTh2 变量间相关性的变异系数" width="30%">
+  <img src="./figures/CoV_matrix_plot_ettm2.png" alt="ETTm2 变量间相关性的变异系数" width="30%">
 </p>
 
-Overview of EMAformer. We enhance a Transformer within variate tokenization framework by integrating three types of auxiliary embeddings: (1) channel embeddings to capture the global representation and stabilize local inter-channel relations; (2) phase embeddings to restore the temporal detail and enhance phase sensitivity; and (3) joint channel-phase embeddings to capture intricate dependencies across channel and temporal dimensions.
+作者用变异系数（CoV）衡量变量间相关性相对于其均值的波动。ETTh2 和 ETTm2 的变量间相关性随时间明显变化，变异系数也很高。这说明局部的变量间关系不稳定，可能干扰自注意力对这些关系的建模，降低预测精度。
 
 <p align="center">
-<img src="./figures/exp_main_results.png"  alt="" align=center />
+<img src="./figures/overview.png" alt="EMAformer 模型结构图" align="center" />
 </p>
 
-Performance comparison of multivariate long-term time series forecasting. Our model achieves the best results in 20 cases and the second-best in 3 cases. Experiments are conducted with a fixed historical window length $L = 96$, and results are averaged over prediction horizons $H \in$ {12, 24, 48, 96} for PEMS series or {96, 192, 336, 720} for the rest of datasets. The best outcomes are highlighted in **bold**, while the second-best are underlined. Lower values indicate better performance.
+EMAformer 以变量为输入单元，在 Transformer 中加入三种辅助嵌入。变量嵌入提供全局变量表征，用于稳定局部变量间关系。相位嵌入补回时间细节，让模型更好地区分不同周期位置。变量与相位的联合嵌入用于刻画变量和时间之间的复杂依赖。
 
 <p align="center">
-<img src="./figures/exp_entropy.png"  alt="" align=center width="50%"/>
+<img src="./figures/exp_main_results.png" alt="多变量长期时间序列预测结果" align="center" />
 </p>
 
-Entropy of the attention score. According to entropy changes, it turns out that our embedding scheme preserves periodicity while enabling the channel to focus more on information that is truly beneficial for prediction.
+在多变量长期预测中，作者报告了 20 项最优结果和 3 项次优结果。所有实验的历史窗口长度固定为 $L = 96$。PEMS 系列数据集对 12、24、48 和 96 步的预测结果取平均，其余数据集对 96、192、336 和 720 步的预测结果取平均。图中最优值以**粗体**标出，次优值以下划线标出，数值越低越好。
 
 <p align="center">
-<img src="./figures/exp_MLPversion.png"  alt="" align=center width=70%"/>
+<img src="./figures/exp_entropy.png" alt="注意力分数的熵" align="center" width="50%"/>
 </p>
 
-Comparison of our embedding strategy by replacing the Transformer backbone with MLP, against the strongest existing MLP baselines. Our MLP variant outperforms other MLP baselines across almost all datasets, underscoring the effectiveness of our embedding design.
+从注意力分数的熵变化来看，作者认为这些嵌入保留了周期信息，也让模型对每个变量更关注有助于预测的输入信息。
 
-## Environment
+<p align="center">
+<img src="./figures/exp_MLPversion.png" alt="采用多层感知机的 EMAformer 与现有基线的比较" align="center" width="70%"/>
+</p>
+
+作者把 Transformer 主干换成多层感知机（MLP），并与当时表现最好的 MLP 基线比较。采用相同嵌入设计的 MLP 版本在几乎所有数据集上都优于其他 MLP 基线。
+
+## 作者推荐的运行环境
 
 - Python 3.8
-- PyTorch >= 2.0.0 + CUDA >= 12.0
-- Dependencies pinned in `requirements.txt`
+- PyTorch 2.0.0 或更高版本，CUDA 12.0 或更高版本
+- 依赖版本见 `requirements.txt`
 
 ```bash
 git clone https://github.com/PlanckChang/EMAformer.git
@@ -73,45 +72,45 @@ conda activate EMAformer
 pip install -r requirements.txt # -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-## Repository Layout
+## 代码目录
 
-- `run.py` — unified entry point for training and evaluation.
-- `model/` — EMAformer and baselines
-- `layers/` — attention, embedding, and encoder components.
-- `data_provider/` — dataset loaders and factory utilities.
-- `experiments/` — experiment engine.
-- `scripts/` — ready-to-run bash scripts for each setting.
-- `utils/` — metrics, time feature engineering, helper tools.
+- `run.py` 是训练和评估的统一入口。
+- `model/` 保存 EMAformer 和对照模型。
+- `layers/` 保存注意力、嵌入和编码器组件。
+- `data_provider/` 保存数据加载器及其调用接口。
+- `experiments/` 保存实验执行逻辑。
+- `scripts/` 保存各种实验配置可直接运行的 Bash 脚本。
+- `utils/` 保存评价指标、时间特征处理和其他辅助工具。
 
-## Data Preparation
+## 准备数据
 
-1. The datasets can be obtained from [Google Drive](https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?usp=drive_link) or [Baidu Cloud](https://pan.baidu.com/s/11AWXg1Z6UwjHzmto4hesAA?pwd=9qjr).
-2. Organize them under a root directory and `unzip` it into the directory `dataset`.
+1. 从作者提供的链接下载数据集。[Google 云端硬盘](https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?usp=drive_link) · [百度网盘](https://pan.baidu.com/s/11AWXg1Z6UwjHzmto4hesAA?pwd=9qjr)
+2. 将数据集解压到代码根目录下的 `dataset` 文件夹。
 
-## Quick Start
+## 快速开始
 
-Run the scripts.
+在代码根目录运行下面的命令，启动 ECL 数据集上的多变量预测实验。
 
 ```bash
 # run the multivariate forecasting experiments with ECL  
 bash scripts/multivariate_forecasting/ECL/EMAformer.sh
 ```
 
-Key CLI arguments:
+常用命令行参数
 
-- `--seq_len`, `--pred_len`: input steps and output steps.
-- `--d_model`, `--n_heads`, `--e_layers`, `--d_ff`: backbone width/depth.
-- `--cycle`: length of predefined periodicity.
-- `--enc_in`, `--dec_in`, `--c_out`: the number of channels and all are the same in EMAformer.
+- `--seq_len` 和 `--pred_len` 分别指定输入步数和预测步数。
+- `--d_model`、`--n_heads`、`--e_layers` 和 `--d_ff` 分别指定模型维度、注意力头数、编码器层数和前馈层的隐藏维度。
+- `--cycle` 指定预设的周期长度。
+- `--enc_in`、`--dec_in` 和 `--c_out` 分别指定编码器的输入变量数、解码器的输入变量数和模型的输出变量数。在 EMAformer 中，三者取值相同。
 
-## Extending EMAformer
+## 扩展模型和数据集
 
-- Implement a new dataset by adding a loader in `data_provider/data_loader.py` and registering it in `data_provider/data_factory.py`.
-- Add new models by creating a module under `model/` and listing it in `experiments/exp_basic.py`.
+- 添加数据集时，在 `data_provider/data_loader.py` 中编写加载器，再在 `data_provider/data_factory.py` 中注册。
+- 添加模型时，在 `model/` 下创建对应模块，再在 `experiments/exp_basic.py` 中注册。
 
-## Citation
+## 引用论文
 
-If you find this repo useful, please cite our paper.
+使用此代码开展研究时，可用以下 BibTeX 引用原论文。
 
 ```
 @article{zhang2025emaformer,
@@ -122,20 +121,16 @@ If you find this repo useful, please cite our paper.
 }
 ```
 
-## License
+## 许可证
 
-This project is licensed under the MIT license. See `LICENSE` for details.
+作者的项目采用 MIT 许可证。[许可证全文](LICENSE)
 
-## Contact & Support
+## 联系作者
 
-For questions, please open an issue or contact the authors. Contributions, bug reports, and improvement suggestions are welcome.
+如有问题、错误报告、改进建议或代码贡献，可在上游仓库提交议题，也可联系作者 Zhiwei Zhang（zhiweizhang@bjtu.edu.cn）。[上游议题页面](https://github.com/PlanckChang/EMAformer/issues)
 
-- Zhiwei Zhang <zhiweizhang@bjtu.edu.cn>
+## 致谢
 
-## Acknowledgement
-
-We appreciate the following projects a lot.
-
-- iTransformer (https://github.com/thuml/iTransformer)
-- CycleNet (https://github.com/ACAT-SCUT/CycleNet)
-- Genimi (https://gemini.google.com/) offers the EMAformer Logo.
+- [iTransformer](https://github.com/thuml/iTransformer)
+- [CycleNet](https://github.com/ACAT-SCUT/CycleNet)
+- EMAformer 标志由 Gemini 提供。[Gemini](https://gemini.google.com/)
