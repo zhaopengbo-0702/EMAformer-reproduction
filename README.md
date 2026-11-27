@@ -16,6 +16,10 @@
 
 下载结果表后，常见列名包括 dataset（数据集）、seed（随机种子）、horizon 或 pred_len（预测长度）、checkpoint_role（权重类型）、measured_mean（本次复现均值）和 published_reference（论文参考值）。
 
+## 公开下载实验数据
+
+训练指标、数值日志、ETT 输入文件和气象输入文件均可免登录下载。预测样本和模型权重的下载入口也在同一份说明中更新。[中文数据下载说明](docs/data-availability.md)
+
 ## 下载原始实验归档
 
 原始实验归档通过 GitHub 草稿版分批上传。全量归档有 25 卷、共约 94.59 GB，包含模型权重、运行日志、预测样本和实验配置。25 卷及其中 5,727 个文件均已通过本地 SHA-256 校验。登录仓库所有者账号后可在草稿中查看已上传的分片和备份索引。[归档草稿](https://github.com/zhaopengbo-0702/EMAformer-reproduction/releases/tag/untagged-cdc84517e84231fb16f5) · [下载与恢复说明](docs/archive-recovery.md)
