@@ -29,3 +29,11 @@
 论文正文及附录可从 arXiv 原地址下载。实际运行使用 Python 3.10.13、PyTorch 2.0.0 和 CUDA 11.7，依赖锁记录了 47 个包及哈希。请从各软件发布渠道按锁文件取得依赖。[论文原文](https://arxiv.org/abs/2511.08396) · [环境锁文件](../datasets/wheelhouse_linux/requirements-linux-cp310.lock) · [本次复现环境说明](../复现报告.md)
 
 Solar、Traffic 和 PEMS03、PEMS04、PEMS07、PEMS08 的实验用文件请从上方作者包下载。该六份基准文件的转载许可尚未确认。
+
+## 无需登录的备用下载
+
+论文作者发布的压缩包提供与本实验校验清单一致的文件。以下备用下载提供相同的测量值。文件格式和 SHA-256 请分别按各自发布者的清单核对。[本实验文件校验清单](../datasets/manifest.json)
+
+- **Solar** 下载后解压 GZIP，即可取得与实验输入全部 52,560 行、137 列数值一致的文本。基准包采用不同的小数文本格式。[LSTNet 下载](https://raw.githubusercontent.com/laiguokun/multivariate-time-series-data/master/solar-energy/solar_AL.txt.gz)
+- **Traffic** 下载后解压 GZIP，即可取得与实验输入全部 17,544 行、862 列数值一致的文本。基准包中的 CSV 附加了时间列。[LSTNet 下载](https://raw.githubusercontent.com/laiguokun/multivariate-time-series-data/master/traffic/traffic.txt.gz)
+- **PEMS03、PEMS04、PEMS07、PEMS08** 的备用文件由 STSGCN 作者以 Parquet 格式提供。已逐项核对四份文件中的全部 59,060,448 个数值，流量及可用的占用率、速度均与本实验的 NPZ 一致。EMAformer 训练读取流量通道。STSGCN 作者对这套打包方式采用 Apache 2.0，原测量值由加州交通局 PeMS 提供。[PEMS03 下载](https://modelscope.cn/datasets/Davidham3/pems-stsgcn/resolve/master/PEMS03/PEMS03_series.parquet) · [PEMS04 下载](https://modelscope.cn/datasets/Davidham3/pems-stsgcn/resolve/master/PEMS04/PEMS04_series.parquet) · [PEMS07 下载](https://modelscope.cn/datasets/Davidham3/pems-stsgcn/resolve/master/PEMS07/PEMS07_series.parquet) · [PEMS08 下载](https://modelscope.cn/datasets/Davidham3/pems-stsgcn/resolve/master/PEMS08/PEMS08_series.parquet) · [数据来源与许可](https://modelscope.cn/datasets/Davidham3/pems-stsgcn)
